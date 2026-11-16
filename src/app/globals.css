@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --apex-blue: #0F375B;
+  --apex-blue-dark: #09233B;
+  --apex-gray: #474A51;
+  --apex-orange: #DB881E;
+  --apex-orange-hover: #C27616;
+  --apex-white: #FFFFFF;
+  --apex-black: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  color: #474A51;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* Blueprint technical pattern subtle overlay */
+.bg-blueprint-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-blueprint-light {
+  background-image:
+    linear-gradient(to right, rgba(15, 55, 91, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 55, 91, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
