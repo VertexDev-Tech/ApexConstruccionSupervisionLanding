@@ -8,17 +8,19 @@
   --apex-orange-hover: #C27616;
   --apex-white: #FFFFFF;
   --apex-black: #000000;
+  --font-montserrat: "Montserrat", Arial, Helvetica, sans-serif;
+  --font-inter: "Inter", Arial, Helvetica, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
   color: #474A51;
   background-color: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-montserrat);
 }
 
 /* Blueprint technical pattern subtle overlay */
